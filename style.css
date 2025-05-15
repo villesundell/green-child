@@ -1,0 +1,60 @@
+/*
+Theme Name:     Greenchild Child Theme for Twenty-Twenty-Five
+Theme URI:      https://github.com/villesundell/green-child
+Description:    Integration of the Green League's graphic guidelines into the Twenty Twenty-Five theme
+Author:         Ville Sundell / ChatGPT o4-mini-high
+License:        CC0 / Public Domain
+Author URI:     https://github.com/villesundell
+Template:       twentytwentyfive
+Version:        0.9.0
+Text Domain:    green-child
+*/
+
+:root {
+  /* Brand Colors */
+  --color-primary: #00562c;
+  --color-secondary: #83c447;
+  --color-accent: #f2f2f2;
+
+  /* Typography */
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-serif: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-secondary);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+button,
+input[type="submit"] {
+  background-color: var(--color-secondary);
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  font-family: var(--font-serif);
+  cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--color-primary);
+}
+
+/* Logo layout */
+.site-branding img {
+  max-width: 200px;
+  height: auto;
+}
+
