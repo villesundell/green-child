@@ -1,4 +1,6 @@
 <?php
+// SPDX-License-Identifier: CC0-1.0
+
 /**
  * Child theme functionality and smooth style enqueuing
  */
