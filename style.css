@@ -16,6 +16,12 @@ Text Domain:    green-child
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Krana Fat B';
+  src: url('fonts/krana-fat-b.otf') format('opentype');
+  font-display: swap;
+}
+
 :root {
   /* Brand Colors */
   --color-primary: #00562c;
