@@ -29,13 +29,13 @@ Text Domain:    green-child
   --color-accent: #f2f2f2;
 
   /* Typography */
-  --font-sans: 'IBM Plex Sans', sans-serif;
-  --font-serif: 'Krana Fat A', 'Barlow Semi Condensed', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-header: 'Krana Fat A', 'Barlow Semi Condensed', sans-serif;
 }
 
 /* Base styles */
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   background-color: var(--color-accent);
   color: var(--color-primary);
 }
@@ -55,7 +55,7 @@ input[type="submit"] {
   border: none;
   padding: 0.5em 1em;
   border-radius: 0.25em;
-  font-family: var(--font-serif);
+  font-family: var(--font-header);
   cursor: pointer;
 }
 
