@@ -10,6 +10,12 @@ Version:        0.9.0
 Text Domain:    green-child
 */
 
+@font-face {
+  font-family: 'Krana Fat A';
+  src: url('fonts/krana-fat-a.otf') format('opentype');
+  font-display: swap;
+}
+
 :root {
   /* Brand Colors */
   --color-primary: #00562c;
@@ -18,7 +24,7 @@ Text Domain:    green-child
 
   /* Typography */
   --font-sans: 'IBM Plex Sans', sans-serif;
-  --font-serif: 'Barlow Semi Condensed', sans-serif;
+  --font-serif: 'Krana Fat A', 'Barlow Semi Condensed', sans-serif;
 }
 
 /* Base styles */
