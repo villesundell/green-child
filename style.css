@@ -6,9 +6,20 @@ Author:         Ville Sundell / ChatGPT o4-mini-high
 License:        CC0 / Public Domain (excluding fonts/)
 Author URI:     https://github.com/villesundell
 Template:       twentytwentyfive
-Version:        0.9.1
+Version:        0.9.2
 Text Domain:    green-child
 */
+
+:root {
+  /* Brand Colors */
+  --color-primary: #006845;
+  --color-secondary: #daaa00;
+  --color-accent: #ebebec;
+
+  /* Typography */
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-header: 'Krana Fat A', 'Barlow Semi Condensed', sans-serif;
+}
 
 @font-face {
   font-family: 'Krana Fat A';
@@ -16,32 +27,38 @@ Text Domain:    green-child
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Krana Fat B';
-  src: url('fonts/krana-fat-b.otf') format('opentype');
-  font-display: swap;
-}
-
-:root {
-  /* Brand Colors */
-  --color-primary: #00562c;
-  --color-secondary: #83c447;
-  --color-accent: #f2f2f2;
-
-  /* Typography */
-  --font-body: 'IBM Plex Sans', sans-serif;
-  --font-header: 'Krana Fat A', 'Barlow Semi Condensed', sans-serif;
-}
-
 /* Base styles */
 body {
   font-family: var(--font-body);
+  font-size: 1em;
   background-color: var(--color-accent);
   color: var(--color-primary);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: var(--font-header);
+  font-size: 3.33em;
+}
+
+h2 {
+  font-family: var(--font-header);
+  font-size: 2em;
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.33em;
+}
+
+blockquote {
+  font-family: var(--font-body);
+  font-style: italic;
+  border-left: 4px solid var(--color-primary);
+  padding-left: 10px;
 }
 
 a {
@@ -67,10 +84,3 @@ button:hover,
 input[type="submit"]:hover {
   background-color: var(--color-primary);
 }
-
-/* Logo layout */
-.site-branding img {
-  max-width: 200px;
-  height: auto;
-}
-
