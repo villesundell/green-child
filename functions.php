@@ -30,5 +30,25 @@ function greenchild_child_enqueue_styles() {
     null
   );
 }
+
+/**
+ * Read a .json file from the child theme and print it as JSON-LD.
+ */
+function greenchild_include_jsonld_file() {
+  // Path to the JSON file inside your child theme:
+  $json_file = get_stylesheet_directory() . '/json-ld.json';
+
+  if (file_exists( $json_file)) {
+    // Read file contents (should already be valid JSON-LD)
+    $json_contents = file_get_contents($json_file);
+
+    // For simplicity, assume the JSON valid and print it directly:
+    echo '<script type="application/ld+json">' . "\n";
+    echo $json_contents . "\n";
+    echo '</script>' . "\n";
+  }
+}
+
+add_action('wp_head', 'greenchild_include_jsonld_file');
 add_action('wp_enqueue_scripts', 'greenchild_child_enqueue_styles');
 
