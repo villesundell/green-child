@@ -6,13 +6,14 @@ Author:         Ville Sundell / ChatGPT o4-mini-high
 License:        CC0 / Public Domain (excluding fonts/)
 Author URI:     https://github.com/villesundell
 Template:       twentytwentyfive
-Version:        0.9.3
+Version:        0.9.4
 Text Domain:    green-child
 */
 
 :root {
   /* Brand Colors */
   --color-primary: #006845;
+  --color-dark: #000000;
   --color-secondary: #daaa00;
   --color-accent: #ebebec;
 
@@ -32,20 +33,23 @@ body {
   font-family: var(--font-body);
   font-size: 1em;
   background-color: var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-dark);
 }
 
 h1 {
+  color: var(--color-primary);
   font-family: var(--font-header);
   font-size: 3.33em;
 }
 
 h2 {
+  color: var(--color-primary);
   font-family: var(--font-header);
   font-size: 2em;
 }
 
 h3, h4, h5, h6 {
+  color: var(--color-primary);
   font-family: var(--font-body);
   font-weight: 500;
 }
@@ -62,7 +66,12 @@ blockquote {
 }
 
 a {
-  color: var(--color-secondary);
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.wp-block-post-title a {
+  text-decoration: underline;
 }
 
 a:hover {
@@ -71,7 +80,7 @@ a:hover {
 
 button,
 input[type="submit"] {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   color: #fff;
   border: none;
   padding: 0.5em 1em;
@@ -82,5 +91,5 @@ input[type="submit"] {
 
 button:hover,
 input[type="submit"]:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
