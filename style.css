@@ -6,7 +6,7 @@ Author:         Ville Sundell / ChatGPT o4-mini-high
 License:        CC0 / Public Domain (excluding fonts/)
 Author URI:     https://github.com/villesundell
 Template:       twentytwentyfive
-Version:        0.9.4
+Version:        0.9.5
 Text Domain:    green-child
 */
 
@@ -32,6 +32,7 @@ Text Domain:    green-child
 body {
   font-family: var(--font-body);
   font-size: 1em;
+  font-weight: 400;
   background-color: var(--color-accent);
   color: var(--color-dark);
 }
@@ -66,7 +67,7 @@ blockquote {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-dark);
   font-weight: bold;
 }
 

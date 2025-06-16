@@ -25,7 +25,7 @@ function greenchild_child_enqueue_styles() {
   // Google Fonts
   wp_enqueue_style(
     'greenchild-google-fonts',
-    'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500&family=IBM+Plex+Mono:wght@400;700&family=Barlow+Semi+Condensed:wght@400;600&display=swap',
+    'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;700&family=Barlow+Semi+Condensed:wght@400;600&display=swap',
     array(),
     null
   );
